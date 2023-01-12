@@ -30,12 +30,10 @@ a{
 /* DEBUG RULES */
 
 header{
-    width: 200px;
     border: 2px solid red;
 }
 
 main{
-    width: 400px;
     border: 2px solid red;
 }
 
@@ -43,7 +41,7 @@ aside{
     border: 2px solid red;
 }
 
-/* CONTAINER*/
+/* CONTAINERS*/
 
 .container{
     max-width: 1440px;
@@ -54,19 +52,38 @@ aside{
 .row{
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 
 .col-big{
     flex-grow: 1;
 }
 
-.col-player{
-    flex-shrink: 0;
-    flex-basis: 100%;
+.player{
     height: 90px;
 }
 
 .col-sidebar{
     width: 230px;
+}
+
+/* MEDIAQUERY MD */
+
+@media screen and (max-width: 878px) {
+    
+}
+
+
+/* MEDIAQUERY S */
+@media screen and (max-width: 639px) {
+    
+}
+
+
+/* MEDIAQUERY XS */
+@media screen and (max-width: 552px) {
+    
+    .col-sidebar{
+        width: 50px;
+    }
 }
