@@ -5,24 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
+    <script src="https://kit.fontawesome.com/113dcf80a9.js" crossorigin="anonymous"></script>
     <title>Spotify</title>
 </head>
 
-<body class="container">
+<body>
 
-    <section class="row">
-        <header class="col col-sidebar">
-           
-        </header>
+    <section class="container">
+
+        <div class="row">
+            <header class="col col-sidebar padding-horizontal">
+               
+            </header>
+        
+            <main class="col col-big">
+                
+            </main>
+        </div>
     
-        <main class="col col-big">
-            
-        </main>
-    </section>
+            <aside class="player padding-horizontal">
+                <div class="row_aside">
+                    <div class="col__aside">
+                        <div class="row_sinister">
+                            <div class="col sinister__img">
+                                <figure>
+                                    <img class="player__img" src="./img/sinister.jpeg" alt="Sinister img">
+                                </figure>
+                            </div>
+                            <div class="col sinister__details">  
+                                <p class="sinister__title titles">Sinister</p>
+                                <p class="sinister__description subtitles">Brano Nome</p>
+                            </div>
+                            <div class="col sinister__icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-folder"></i>         
+                            </div>
+                        </div>     
+                    </div>
 
-    <aside class="player">
-            
-    </aside>   
+
+                    <div class="col__aside">
+                        <ul class="row_lists">
+                            <li class="col margin-icons">
+                                <button>
+                                    <i class="player-icons fa-solid fa-shuffle"></i>
+                                </button>
+                            </li>
+                            <li class="col margin-icons">
+                                <button>
+                                    <i class="player-icons fa-solid fa-backward-step"></i>
+                                </button>
+                            </li>
+                            <li class="col">
+                                <button>
+                                    <i class="player-icons play-icon fa-regular fa-circle-play"></i>
+                                </button>
+                            </li>
+                            <li class="col margin-icons">
+                                <button>
+                                    <i class="player-icons fa-solid fa-forward-step"></i>
+                                </button>
+                            </li>
+                            <li class="col margin-icons">
+                                <button>
+                                    <i class="player-icons fa-solid fa-rotate-right"></i>
+                                </button>                           
+                            </li>
+                        </ul>
+
+                        <ul class="row_lists">
+                            <li class="col">
+                                <span class="time-progress-bar">0:25</span>
+                            </li>
+                            <li class="col">
+                                <div class="progress-bar"></div>
+                            </li>
+                            <li class="col">
+                                <span class="time-progress-bar">4:35</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col__aside">
+                        <ul class="row_lists">
+                            <li class="col">
+                                <button>
+                                    <i class="player-icons2 fa-sharp fa-solid fa-bars"></i>
+                                </button>
+                            </li>
+                            <li class="col">
+                                <button>
+                                    <i class="player-icons2 fa-solid fa-tv"></i>
+                                </button>
+                            </li>
+                            <li class="col">
+                                <button>
+                                    <i class="player-icons2 fa-solid fa-volume-high"></i>
+                                </button>
+                            </li>
+                            <li class="col">
+                                <div class="progress-bar small-progress-bar"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>   
+    </section>
+    
     
 </body>
 </html>
