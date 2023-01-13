@@ -318,6 +318,7 @@ button{
 
     .col-sidebar{
         flex-basis: 50px;
+        align-items: center;
     }
 
     .col-big{
