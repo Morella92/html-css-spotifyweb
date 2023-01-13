@@ -86,8 +86,10 @@ a{
     font-size: 15px;
     text-transform: uppercase;
 }
-.playlist-details2{
-    flex-grow: 1;
+
+.row_main{
+    display: flex;
+    gap: 18px;
 }
 
 .col-sidebar{
@@ -118,6 +120,11 @@ a{
     align-items: center;
     gap: 10px;
 }
+
+.playlist-details2{
+    flex-grow: 1;
+}
+
 .row_sinister{
     display: flex;
     justify-content: space-evenly;
@@ -133,6 +140,22 @@ a{
 .position-relative{
     position: relative;
     top: 90px;
+    padding: 20px 20px;
+}
+
+.margin-bottom{
+    margin-bottom: 30px;
+}
+
+.position-play{
+    position: relative;
+}
+
+.position-icon{
+    position: absolute;
+    transform: translate(-100px, 60px);
+    font-size: 50px;
+    color: white;
 }
 /* TITLES RULES */
 
@@ -144,6 +167,17 @@ a{
 .subtitles{
     color: var(--grey);
     font-weight: 600;
+}
+
+.main-titles{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.song-title{
+    text-align: center;
+    font-size: 15px;
 }
 
 /* SIDEBAR RULES */
@@ -223,6 +257,14 @@ a{
         width: 100%;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .song-img{
+        width: 100%;
+    }
+
+    .img_youg, .img_einaudi{
+        border-radius: 100%;
     }
 
 /* PLAYER RULES */
@@ -305,13 +347,22 @@ button{
 @media screen and (max-width: 878px) {
     
     /* MEDIA MD - MAIN RULES */
-    .nav-main{
+    .nav-main, .row_main{
         flex-wrap: wrap;
     }
 
     .subtitle-discover{
         flex-basis: 100%;
         text-align: center;
+    }
+
+    .col_metal, .col_stranger,
+    .col_quiet, .col_split{
+        flex-basis: calc(100% / 4 - 54px / 4);
+    }
+
+    .col_cure, .col_sinister{
+        flex-basis: calc(100% / 2 - 18px);
     }
 }
 
@@ -325,6 +376,10 @@ button{
     .subtitle-basis{
         flex-basis: calc(100% / 3 - 50px / 3);
         text-align: center;
+    }
+
+    .col-songs{
+        flex-basis: calc(100% / 2 - 18px);
     }
     /* MEDIA S-PLAYER RULES */
 
