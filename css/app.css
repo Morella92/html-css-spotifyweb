@@ -41,13 +41,16 @@ a{
 .button__download{
     background-color: black;
     padding: 10px;
+    margin-left: -10px;
     margin-bottom: 10px;
+    border-bottom: 1px solid var(--grey);
 }
 
 .button__profile{
     background-color: var(--grey);
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
-    padding: 0 3px;
 }
 
 :root{
@@ -153,7 +156,8 @@ a{
 
 .position-icon{
     position: absolute;
-    transform: translate(-100px, 60px);
+    top: 20%;
+    left: 30%;
     font-size: 50px;
     color: white;
 }
@@ -228,6 +232,11 @@ a{
     color: var(--grey);
 }
 
+.fa-square-plus{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
 .download-icon{
     width: 15px;
     color: var(--grey);
@@ -237,13 +246,6 @@ a{
 .profile__name{
     font-size: 15px;
     font-weight: 700;
-}
-
-.button__download::after{
-    display: table;
-    content: "";
-    border: 1px solid var(--grey);
-    width: 150px;
 }
 
 /* MAIN CONTENT RULES */
@@ -261,6 +263,10 @@ a{
 
     .song-img{
         width: 100%;
+    }
+
+    .img-quiet{
+        filter: opacity(0.5);
     }
 
     .img_youg, .img_einaudi{
@@ -356,6 +362,13 @@ button{
         text-align: center;
     }
 
+    .img-quiet{
+        filter: opacity(1);
+    }
+    .position-icon{
+        display: none;
+    }
+
     .col_metal, .col_stranger,
     .col_quiet, .col_split{
         flex-basis: calc(100% / 4 - 54px / 4);
@@ -445,8 +458,8 @@ button{
         flex-grow: 1;
     }
 
-    .button__download::after{
-        display: none;
+    .button__download{
+        border: none;
     }
 
     /* MEDIA XS-PLAYER RULES */
