@@ -75,7 +75,6 @@ a{
 }
 
 .nav-header{
-    color: white;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
@@ -221,6 +220,7 @@ a{
 }
 
 .title-playlist{
+    color: white;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 700;
@@ -233,6 +233,7 @@ a{
 }
 
 .fa-square-plus{
+    color: var(--grey);
     font-size: 40px;
     margin-right: 10px;
 }
@@ -244,6 +245,7 @@ a{
 }
 
 .profile__name{
+    color: white;
     font-size: 15px;
     font-weight: 700;
 }
@@ -259,6 +261,11 @@ a{
         width: 100%;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .subtitle-evidence{
+        border-bottom: 4px solid #ADFF2F;
+        width: 30px;
     }
 
     .song-img{
@@ -346,6 +353,21 @@ button{
 
 .player-icons2{
     color: white;
+}
+
+/* HOVER RULES */
+
+.hover-white:hover{
+    color: white;
+}
+
+.sinister__description:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.button:hover{
+    transform: scale(1.1);
 }
 
 /* MEDIAQUERY MD */
