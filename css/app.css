@@ -107,6 +107,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .row_sinister{
     display: flex;
@@ -350,5 +351,9 @@ button{
 
     .playlist-details{
         flex-grow: 1;
+    }
+
+    .button__download::after{
+        display: none;
     }
 }
