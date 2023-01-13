@@ -31,6 +31,7 @@ a{
     background-color: var(--lightblack);
     border: 1px solid white;
     border-radius: 999px;
+    margin: 20px;
     padding: 15px 40px;
     color: white;
     text-transform: uppercase;
@@ -70,13 +71,21 @@ a{
     display: flex;
 }
 
-.nav-container{
+.nav-header{
     color: white;
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
 }
 
+.nav-main{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: var(--grey);
+    font-size: 15px;
+    text-transform: uppercase;
+}
 .playlist-details2{
     flex-grow: 1;
 }
@@ -121,6 +130,10 @@ a{
     padding: 0 20px;
 }
 
+.position-relative{
+    position: relative;
+    top: 90px;
+}
 /* TITLES RULES */
 
 .titles{
@@ -298,6 +311,7 @@ button{
 
 @media screen and (max-width: 639px) {
 
+    /* MEDIA S-PLAYER RULES */
     .player__img{
         width: 36px;
     }
@@ -316,6 +330,7 @@ button{
         height: calc(100vh - 50px);
     }
 
+    /* MEDIA XS-SIDEBAR RULES */
     .col-sidebar{
         flex-basis: 50px;
         align-items: center;
@@ -323,13 +338,6 @@ button{
 
     .col-big{
         flex-basis: calc(100% - 50px);
-    }
-    .player__img{
-        width: 30px;
-    }
-
-    .sinister__title, .sinister__description{
-        font-size: 12px;
     }
 
     .sidebar-icons,
@@ -356,5 +364,15 @@ button{
 
     .button__download::after{
         display: none;
+    }
+
+    /* MEDIA XS-PLAYER RULES */
+
+    .player__img{
+        width: 30px;
+    }
+
+    .sinister__title, .sinister__description{
+        font-size: 12px;
     }
 }
