@@ -25,6 +25,18 @@ a{
     color: currentColor;
 }
 
+/* BUTTON RULES */
+
+.button__black{
+    background-color: var(--lightblack);
+    border: 1px solid white;
+    border-radius: 999px;
+    padding: 15px 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 :root{
     --lightblack: #080B12;
     --darkblue:#141922;
@@ -95,6 +107,15 @@ a{
 
     .col-big{
         background-color: var(--darkblue);
+    }
+
+    .fixed-bar{
+        background-color: var(--lightblack);
+        position: fixed;
+        height: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
     }
 
 /* PLAYER RULES */
