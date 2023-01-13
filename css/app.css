@@ -304,6 +304,15 @@ button{
 
 @media screen and (max-width: 878px) {
     
+    /* MEDIA MD - MAIN RULES */
+    .nav-main{
+        flex-wrap: wrap;
+    }
+
+    .subtitle-discover{
+        flex-basis: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -311,7 +320,14 @@ button{
 
 @media screen and (max-width: 639px) {
 
+    /* MEDIA S - MAIN RULES */
+
+    .subtitle-basis{
+        flex-basis: calc(100% / 3 - 50px / 3);
+        text-align: center;
+    }
     /* MEDIA S-PLAYER RULES */
+
     .player__img{
         width: 36px;
     }
@@ -326,8 +342,20 @@ button{
 
 @media screen and (max-width: 552px) {
     
+    /* MEDIA XS - MAIN RULES */
     .row{
         height: calc(100vh - 50px);
+    }
+
+    .subtitle-evidence, .subtitle-podcast,
+    .subtitle-charts, .subtitle-mood{
+        flex-basis: calc(100% / 4 - 75px / 4);
+        text-align: center;
+    }
+
+    .subtitle-discover, .subtitle-new{
+        flex-basis: calc(100% / 2 - 25px);
+        text-align: center;
     }
 
     /* MEDIA XS-SIDEBAR RULES */
