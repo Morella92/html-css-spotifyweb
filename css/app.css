@@ -37,6 +37,18 @@ a{
     font-weight: 700;
 }
 
+.button__download{
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button__profile{
+    background-color: var(--grey);
+    border-radius: 100%;
+    padding: 0 3px;
+}
+
 :root{
     --lightblack: #080B12;
     --darkblue:#141922;
@@ -58,25 +70,44 @@ a{
     display: flex;
 }
 
+.nav-container{
+    color: white;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-details2{
+    flex-grow: 1;
+}
+
 .col-sidebar{
     flex-basis: 230px;
     background-color: black;
     flex-shrink: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .col-big{
     flex-grow: 1;
     overflow-y: auto;
     background-color: var(--darkblue);
+    position: relative;
 }
 
-.row_aside, .row_lists{
+.row_aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.row_lists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .row_sinister{
     display: flex;
     justify-content: space-evenly;
@@ -87,10 +118,6 @@ a{
 
 .padding-horizontal{
     padding: 0 20px;
-}
-
-.margin-icons{
-    
 }
 
 /* TITLES RULES */
@@ -107,26 +134,28 @@ a{
 
 /* SIDEBAR RULES */
 
-nav{
-    color: white;
-}
-
 .playlist-details{
-    line-height: 30px;
+    line-height: 25px;
+    padding-top: 10px;
 }
 
 .logo{
-    font-size: 40px;  
-    padding-top: 20px;
+    width: 150px;  
+    padding: 20px 0;
 }
 
-.logo_description{
-    font-size: 25px;
-    font-weight: 700;
+.logo-small{
+    display: none;
 }
 
 .sidebar-icons{
-    font-size: 20px;
+    width: 25px;
+}
+
+.home_color{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .grey-icons{
@@ -134,7 +163,8 @@ nav{
 }
 
 .sidebar-icons_description, .name-playlist{
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 700;
     color: var(--grey);
 }
 
@@ -146,14 +176,35 @@ nav{
 
 .create-playlist{
     font-size: 15px;
+    font-weight: 700;
     color: var(--grey);
+}
+
+.download-icon{
+    width: 15px;
+    color: var(--grey);
+    text-align: center;
+}
+
+.profile__name{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button__download::after{
+    display: table;
+    content: "";
+    border: 1px solid var(--grey);
+    width: 150px;
 }
 
 /* MAIN CONTENT RULES */
 
     .fixed-bar{
         background-color: var(--lightblack);
-        position: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
         height: 90px;
         width: 100%;
         display: flex;
@@ -172,14 +223,15 @@ nav{
 }
 
 .sinister__details{
-    margin-right: 40px;
+    margin-right: 30px;
 }
+
 .player__img{
     width: 40px;
 }
 
 .fa-heart{
-    margin-right: 14px;
+    margin-right: 10px;
 }
 
 .fa-heart, .fa-folder{
@@ -188,6 +240,19 @@ nav{
 button{
     background-color: var(--darkgrey);
     border: none;
+}
+
+.col__aside{
+    flex-basis: 230px;
+}
+
+.central__player{
+    flex-basis: 40%;
+    padding-top: 10px;
+}
+
+.progress{
+    flex-grow: 1;
 }
 .player-icons{
     color: white;
@@ -206,18 +271,15 @@ button{
 .progress-bar{
     background-color: var(--grey);
     height: 7px;
-    width: 400px;
+    width: 100%;
     margin: 20px 0;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    -moz-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-    -webkit-box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
-    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
 }
 
 .small-progress-bar{
-    width: 100px;
+    width: 100%;
 }
 
 .player-icons2{
@@ -264,13 +326,29 @@ button{
         width: 30px;
     }
 
-    .logo, .sidebar-icons{
+    .sinister__title, .sinister__description{
+        font-size: 12px;
+    }
+
+    .sidebar-icons,
+    .profile__name{
         font-size: 20px;
         text-align: center;
     }
 
-    .logo_description, .sidebar-icons_description, 
-    .playlist-details2{
+    .logo-small{
+        display:inline;
+        width: 25px;
+    }
+
+    .logo, .logo_description, .home_color, 
+    .sidebar-icons_description, 
+    .playlist-details2,
+    .profile__name{
         display: none;
+    }
+
+    .playlist-details{
+        flex-grow: 1;
     }
 }

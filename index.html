@@ -13,19 +13,20 @@
 
     <div class="row">
         <header class="col col-sidebar padding-horizontal">
-           <nav>
+            <nav class="nav-container">
+                <div>
+                    <img class="logo" src="./img/logo.svg" alt="">
+                    <img class="logo-small" src="./img/logo-small.svg" alt="">
+                </div>
                 <ul class="playlist-details">
                     <li>
-                        <a class="logo" href="#"><i class="fa-brands fa-spotify"></i> <span class="logo_description">Spotify</span></a>
+                        <a href="#"><img class="sidebar-icons" src="./img/home.svg" alt=""> <span class="home_color">Home</span> </a>
                     </li>
                     <li>
-                        <a class="sidebar-icons" href="#"><i class="fa-solid fa-house"></i> <span class="sidebar-icons_description">Home</span> </a>
+                        <a href="#"><img class="sidebar-icons grey-icons" src="./img/search.svg" alt=""> <span class="sidebar-icons_description">Cerca</span></a>
                     </li>
                     <li>
-                        <a class="sidebar-icons grey-icons" href="#"><i class="fa-solid fa-magnifying-glass"></i> <span class="sidebar-icons_description">Cerca</span></a>
-                    </li>
-                    <li>
-                        <a class="sidebar-icons grey-icons" href="#"><i class="fa-brands fa-spotify"></i> <span class="sidebar-icons_description">La tua libreria</span></a>
+                        <a href="#"> <img class="sidebar-icons grey-icons" src="./img/libreria.svg" alt=""><span class="sidebar-icons_description">La tua libreria</span></a>
                     </li>
                 </ul>
 
@@ -58,7 +59,22 @@
                         <a class="name-playlist" href="#">Nome Playlist</a>
                     </li>
                 </ul>
-           </nav>
+
+                <ul>
+                    <li>
+                        <button class="button__download"> 
+                            <img class="download-icon" src="./img/download.svg" alt=""> 
+                            <span class="sidebar-icons_description">Installa app</span> 
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button__profile">
+                            <img class="sidebar-icons" src="./img/profile.svg" alt=""> 
+                        </button>
+                        <span class="profile__name">John Doe</span> 
+                    </li>
+                </ul>
+            </nav>
         </header>
     
         <main class="col col-big">
@@ -90,7 +106,7 @@
             </div>
 
 
-            <div class="col__aside">
+            <div class="central__player">
                 <ul class="row_lists">
                     <li class="col margin-icons">
                         <button>
@@ -123,7 +139,7 @@
                     <li class="col">
                         <span class="time-progress-bar">0:25</span>
                     </li>
-                    <li class="col">
+                    <li class="col progress">
                         <div class="progress-bar"></div>
                     </li>
                     <li class="col">
@@ -149,8 +165,8 @@
                             <i class="player-icons2 fa-solid fa-volume-high"></i>
                         </button>
                     </li>
-                    <li class="col">
-                        <div class="progress-bar small-progress-bar"></div>
+                    <li class="col progress">
+                        <div class="progress-bar"></div>
                     </li>
                 </ul>
             </div>
