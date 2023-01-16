@@ -268,8 +268,8 @@ a{
 
     .position-icon{
         position: absolute;
-        right: 35%;
-        top: 35%;
+        left: 30%;
+        bottom: 30%;
         font-size: 3.5rem;
         color: white;
         display: none;
@@ -359,6 +359,7 @@ button{
     background-color: white;
     position: absolute;
     right: 0;
+    bottom: -1px;
     display: none;
 }
 
