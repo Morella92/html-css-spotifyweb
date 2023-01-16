@@ -347,13 +347,11 @@ button{
     border-radius: 999px;
 }
 .progress__color{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background-color: #c1c1c1;
     height: 7px;
     width: 25%;
     border-radius: 999px;
+    position: relative;
 }
 
 .progress__dot{
@@ -361,6 +359,8 @@ button{
     width: 10px;
     height: 10px;
     background-color: white;
+    position: absolute;
+    right: 0;
     display: none;
 }
 
