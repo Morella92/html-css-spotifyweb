@@ -85,7 +85,7 @@ a{
     justify-content: center;
     gap: 25px;
     color: var(--grey);
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
 }
 
@@ -252,16 +252,14 @@ a{
         justify-content: flex-end;
     }
 
-    .subtitle-evidence{
-        border-bottom: 4px solid #ADFF2F;
+    .border-green{
+        border: 2px solid #ADFF2F;
         width: 30px;
+        margin-left: 30px;
     }
 
     .col-songs{
         flex-basis: calc(100% / 6);
-    }
-    .song-img{
-        width: 100%;
     }
 
     .position-hover{
@@ -272,9 +270,9 @@ a{
         position: absolute;
         right: 35%;
         top: 35%;
-        font-size: 50px;
+        font-size: 3.5rem;
         color: white;
-        filter: opacity(0);
+        display: none;
     }
 
     .img_youg, .img_einaudi{
@@ -355,7 +353,7 @@ button{
 }
 
 .progress__dot{
-    border-radius: 50%;
+    border-radius: 999px;
     width: 10px;
     height: 10px;
     background-color: white;
@@ -383,12 +381,12 @@ button{
     transform: scale(1.1);
 }
 
-.img-hover:hover{
-    filter: opacity(0.3);
+.position-hover:hover .position-icon{
+    display: block;
 }
 
-.position-icon:hover{
-    filter: opacity(1);
+.position-hover:hover .img-hover{
+    filter: opacity(0.3);
 }
 
 .progress__color:hover{
