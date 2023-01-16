@@ -257,15 +257,11 @@ a{
         width: 30px;
     }
 
+    .col-songs{
+        flex-basis: calc(100% / 6);
+    }
     .song-img{
         width: 100%;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-    }
-
-    .smaller-img{
-        width: 50%;
     }
 
     .position-hover{
@@ -274,7 +270,8 @@ a{
 
     .position-icon{
         position: absolute;
-        transform: translate(120%, -170%);
+        right: 35%;
+        top: 35%;
         font-size: 50px;
         color: white;
         filter: opacity(0);
@@ -327,6 +324,7 @@ button{
 .progress{
     flex-grow: 1;
 }
+
 .player-icons{
     color: white;
     font-size: 18px;
@@ -344,11 +342,9 @@ button{
 .progress-bar{
     background-color: #5A5A5A;
     height: 7px;
-    width: 100%;
+    /* width: 100%; non serve perchè c'è il flex-grow */
     margin: 20px 0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 999px;
 }
 .progress__color{
     display: flex;
@@ -357,7 +353,7 @@ button{
     background-color: #c1c1c1;
     height: 7px;
     width: 25%;
-    border-radius: 5px;
+    border-radius: 999px;
 }
 
 .progress__dot{
@@ -417,13 +413,8 @@ button{
         text-align: center;
     }
 
-    .col_metal, .col_stranger,
-    .col_quiet, .col_split{
+    .col-songs{
         flex-basis: calc(100% / 4 - 54px / 4);
-    }
-
-    .col_cure, .col_sinister{
-        flex-basis: calc(100% / 2 - 18px);
     }
 }
 
