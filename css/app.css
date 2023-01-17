@@ -290,12 +290,7 @@ a{
         height: 4px;
         background-color: #ADFF2F;
         position: absolute;
-        left: 40%;
-    }
-
-    .subtitle-basis{
-        flex-basis: calc(100% / 6 - 125px / 6);
-        text-align: center;
+        left: 30%;
     }
 
     .col-songs{
@@ -456,8 +451,9 @@ button{
         flex-wrap: wrap;
     }
 
-    .subtitle-basis{
-        flex-basis: calc(100% / 5 - 100px / 5);
+    .subtitles-discover{
+        flex-basis: 100%;
+        text-align: center;
     }
 
     .col-songs{
@@ -472,9 +468,8 @@ button{
 
     /* MEDIA S - MAIN RULES */
 
-    .subtitle-basis{
-        flex-basis: calc(100% / 3 - 50px / 3);
-        text-align: center;
+    .subtitles-discover{
+        flex-basis: 0;
     }
 
     .col-songs{
@@ -499,16 +494,6 @@ button{
     /* MEDIA XS - MAIN RULES */
     .row{
         height: calc(100vh - 50px);
-    }
-
-    .subtitle-basis{
-        flex-basis: calc(100% / 4 - 75px / 4);
-        text-align: center;
-    }
-
-    .subtitle-discover, .subtitle-new{
-        flex-basis: calc(100% / 2 - 25px);
-        text-align: center;
     }
 
     /* MEDIA XS-SIDEBAR RULES */
