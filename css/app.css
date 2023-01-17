@@ -89,6 +89,12 @@ a{
     text-transform: uppercase;
 }
 
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .row_main{
     display: flex;
     gap: 18px;
@@ -302,8 +308,6 @@ a{
 
     .position-icon{
         position: absolute;
-        left: 30%;
-        bottom: 60%;
         font-size: 3.5rem;
         color: white;
         display: none;
