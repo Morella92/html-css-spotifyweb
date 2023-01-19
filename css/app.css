@@ -8,6 +8,9 @@
 
 img{
     width: 100%;
+    /* display block per eliminare lo spazio che ha l'img stessa sotto
+    aspect ratio per farla restare quadrata e 
+    object fit per non far strechare i px */
 }
 
 html{
@@ -286,15 +289,21 @@ a{
     .border-green::after{
         content: "";
         display: none;
-        width: 30px;
+        width: 40px;
         height: 4px;
         background-color: #ADFF2F;
         position: absolute;
-        left: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        /* se si usa la width in px meglio mettere il translate per
+        centrarlo sempre anche se hanno grandezze diverse. 
+        Altrimenti dare width in % senza il transform */
     }
 
     .col-songs{
         flex-basis: calc(100% / 6);
+        /* basis 100% * 2 / 12 perchè le colonne 
+        sono 2/12 del 100% */
     }
 
     .position-hover{
@@ -306,6 +315,9 @@ a{
         font-size: 3.5rem;
         color: white;
         display: none;
+        /* per dare la grandezza dell'icona uguale a tutta l'img
+        basta dare top/bottom/right/left 0 cosi si stretcha
+        e basta dare il bg opaco per avere l'effetto voluto */
     }
 
     .img_youg, .img_einaudi{
